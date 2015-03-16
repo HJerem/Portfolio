@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jérémy Halin | Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">Vous utilisez un navigateur <strong>obsolète</strong>. Merci de <a href="http://browsehappy.com/">mettre à jour votre navigateur</a> pour améliorer votre expérience utilisateur.</p>
+<![endif]-->
+
+<?php include('header.php'); ?>
+<div class="title-background">
+  <div class="container-1024">
+    <h2>Contact</h2>
+  </div>
+</div>
+<section class="container-1024">
+
+  <?php
+  $err=false;
+  $message="";
+  if(isset($_POST['submit']) && $_POST['submit']=="Envoyer"){
+    if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['name']) && isset($_POST['sujet']) && isset($_POST['budget']) && isset($_POST['message'])){
+      if(preg_match('#^(([a-z0-9!\#$%&\\\'*+/=?^_`{|}~-]+\.?)*[a-z0-9!\#$%&\\\'*+/=?^_`{|}~-]+)@(([a-z0-9-_]+\.?)*[a-z0-9-_]+)\.[a-z]{2,}$#i',$_POST['email'])){
+        if(strlen($_POST['message'])>100){
+          $to      = 'hello@jeremyhalin.fr';
+          $subject = ucfirst($_POST['sujet']);
+          $message = $_POST['message'];
+          $headers  = 'MIME-Version: 1.0' . "\r\n";
+          $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+          $headers .= 'Content-Transfer-Encoding: 8bit' . "\r\n";
+          $headers .= 'To: Jérémy Halin <hello@jeremyhalin.me>' . "\r\n";
+          $headers .= 'From: '.$_POST['name'].'<'.$_POST['email'].'>' . "\r\n";
+
+          if(mail($to, $subject, "<p>".$message."</p>", $headers)){
+            $message="<i class='fa fa-check'></i> Message envoyé, merci. Je vous répondrais au plus vite !";
+          }
+          else{
+            $err=true;
+            $message="<i class='fa fa-exclamation-triangle'></i> Une erreur est survenue. Votre message n'a pas été envoyé";
+          }
+        }
+        else{
+          $err=true;
+          $message="<i class='fa fa-exclamation-triangle'></i> Merci de décrire votre projet plus précisemment";
+        }
+      }
+      else{
+        $message = "<i class='fa fa-exclamation-triangle'></i> Merci de remplir tous les champs";
+      }
+    }
+  }
+
+  ?>
+  <p id="message-validation"><?php echo $message ?></p>
+  <form class="formulaire" name="form" id="form" action="http://jeremyhalin.fr/contact" method="POST">
+    <input type="text" class="input" placeholder="Nom..." name="name" id="nom" required>
+    <input type="email" class="input" placeholder="Email..." name="email" id="email" required>
+    <select name="sujet" id="sujet" required>
+      <option value="" default>Sujet...</option>
+      <option value="devis">Demande de devis</option>
+      <option value="question">Question, proposition, demande</option>
+      <option value="autre">Autre</option>
+    </select>
+    <select name="budget" id="budget" required>
+      <option value="" default>Budget...</option>
+      <option value="1"><500€</option>
+      <option value="2">entre 500€ et 1000€</option>
+      <option value="3">entre 1000€ et 2500€</option>
+      <option value="4">>2500€</option>
+    </select>
+    <textarea class="inputMessage" placeholder="Message..." name="message" id="message" required></textarea>
+    <input type="submit" name="submit" value="Envoyer" class="btn color5" onclick="return validForm()">
+  </form>
+
+</section>
+
+<?php include('footer.php'); ?>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
