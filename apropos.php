@@ -26,6 +26,7 @@
   </div>
 </div>
 <section class="container-1024">
+<div class="about">
 	<p>
 		<center><span class="round"><i class="fa fa-user"></i></span></center>
 	</p>
@@ -35,6 +36,7 @@
 	<p>Auto didacte, sérieux et passionné, je saurais m’adapter à votre projet et faire en sorte que le résultat final réponde parfaitement à vos attentes tout en étant unique et moderne.</p>
 	
 	<center><a href="/contact" class="seethecaseblack">Me contacter</a></center>
+	</div>
 </section>
 
 <?php include('footer.php'); ?>

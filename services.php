@@ -105,13 +105,15 @@
 <script src="js/jquery.flexslider-min.js"></script>
 <script type="text/javascript">
   $(window).load(function(){
-    $('#slider').flexslider({
-      animation: "slide",
-      controlNav: false,
-      directionNav: false,
-      animationLoop: false,
-      slideshow: false
-    });
+    if($(window).width()>640){
+      $('#slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        directionNav: false,
+        animationLoop: false,
+        slideshow: false
+      });  
+    }
   });
 </script>
 

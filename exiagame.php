@@ -28,8 +28,8 @@
 
         <h2 style="float:left">exiagame</h2>
         <div class="navigation">
-          <a href="evenact.php" title="Projet précédent: Evenact"><div class="square color4"><i class="fa fa-angle-left"></i></div></a>
-          <a href="ftwrecords.php" title="Projet suivant: FTW Records"><div class="square color4"><i class="fa fa-angle-right"></i></div></a>
+          <a href="evenact.php" class="previous-project color2" title="Projet précédent: Evenact"><i class="fa fa-angle-left"></i></a>
+          <a href="ftwrecords.php" class="next-project color2" title="Projet suivant: FTW Records"><i class="fa fa-angle-right"></i></a>
         </div>
         <div class="browser">
           <div class="toolbar">
