@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Jérémy Halin | Projet ExiaGame</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -18,6 +19,8 @@
 <div id="container">
 
   <?php include('header.php'); ?>
+
+
 
   <section id="container-project">
     <div class="exiagame" style="padding-top:20px">

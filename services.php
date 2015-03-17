@@ -44,37 +44,37 @@
       <li>
         <span class="round"><i class="fa fa-code"></i></span>
         <h3>Intégration web</h3>
-        <p>J'intègre votre site web en me souciant des moindres détails tout en me focalisant sur l'expérience utilisateur (UX).</p>
+        <p>J’intègre votre site web jusqu’aux moindres détails tout en me focalisant sur l’expérience utilisateur (UX).</p>
       </li>
       <li>
         <span class="round"><i class="fa fa-facebook"></i></span>
         <h3>Réseaux sociaux</h3>
-        <p>Je m'occupe de rendre visible votre entreprise sur les principaux réseaux sociaux et ce afin d'en augmenter la visibilité sur internet.</p>
+        <p>Je m’occupe de rendre visible votre entreprise sur les principaux réseaux sociaux et ce afin d’en augmenter la visibilité sur internet.</p>
       </li>
       <li>
         <span class="round"><i class="fa fa-expand"></i></span>
         <h3>Responsive (site web adaptatif)</h3>
-        <p>Je m'assure que chaque page de votre site est accessible peu importe l'appareil (smartphone, tablette, PC).</p>
+        <p>Je m’assure que chaque page de votre site est accessible peu importe l’appareil (PC, smartphone, tablette, ordinateur potable)</p>
       </li>
       <li>
         <span class="round"><i class="fa fa-cogs"></i></span>
-        <h3>Responsive (site web adaptatif)</h3>
-        <p>Je m'assure que chaque page de votre site est accessible peu importe l'appareil (smartphone, tablette, PC).</p>
+        <h3>Développement back-end</h3>
+        <p>Je conçois votre application ainsi que son interface d’administration de manière optimisée et bien pensée.</p>
       </li>
       <li>
         <span class="round"><i class="fa fa-check"></i></span>
         <h3>Respect des normes</h3>
-        <p>Je respecte les normes liées  à l'accessibilités, au W3C, à l'ergonomie et à la compatibilité multi-navigateurs.</p>
+        <p>Je respecte les normes liées à l’accessibilité, au W3C, à l’ergonomie et la compatibilité multi-navigateurs.</p>
       </li>
       <li>
         <span class="round"><i class="fa fa-server"></i></span>
         <h3>Hébergement</h3>
-        <p>Je m'occupe de l'achat du nom de domaine, de la mise en ligne et du référencement de votre site internet.</p>
+        <p>Je m’occupe du nom de domaine, de la mise en ligne, du référencement et autres actions liées à la mise en ligne afin de vous fournir un site web “clés en main”.</p>
       </li>
       <li>
         <span class="round"><i class="fa fa-heart"></i></i></span>
         <h3>Passion</h3>
-        <p>Je travaille avec passion et je suis perfectionniste, tous vos projets seront menés à bien avec attention.</p>
+        <p>Je travaille avec passion, je suis perfectionniste et ne laisse rien au hasard. Vous êtes assurés d’obtenir un produit performant et correspondant à vos attentes.</p>
       </li>
     </ul>
   </div>
