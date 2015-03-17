@@ -9,6 +9,7 @@
   <title>Jérémy Halin | Contact</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -62,8 +63,8 @@
   ?>
   <p id="message-validation"><?php echo $message ?></p>
   <form class="formulaire" name="form" id="form" action="http://jeremyhalin.fr/contact" method="POST">
-    <input type="text" class="input" placeholder="Nom..." name="name" id="nom" required>
-    <input type="email" class="input" placeholder="Email..." name="email" id="email" required>
+    <input type="text" class="input" placeholder="Nom..." name="name" id="nom" value="<?php echo $_POST['name'] ?>" required>
+    <input type="email" class="input" placeholder="Email..." name="email" id="email" value="<?php echo $_POST['email'] ?>" required>
     <select name="sujet" id="sujet" required>
       <option value="" default>Sujet...</option>
       <option value="devis">Demande de devis</option>
@@ -77,8 +78,8 @@
       <option value="3">entre 1000€ et 2500€</option>
       <option value="4">>2500€</option>
     </select>
-    <textarea class="inputMessage" placeholder="Message..." name="message" id="message" required></textarea>
-    <input type="submit" name="submit" value="Envoyer" class="btn color5" onclick="return validForm()">
+    <textarea class="inputMessage" placeholder="Message..." name="message" id="message" value="<?php echo $_POST['message'] ?>" required></textarea>
+    <input type="submit" name="submit" value="Envoyer" class="seethecaseblack" style="display:block;" onclick="return validForm()">
   </form>
 
 </section>
