@@ -10,7 +10,6 @@
   <meta name="description" content="Jérémy Halin, webdesigner et développeur freelance à Reims. Disponible pour vos projets !">
   <meta name="keywords" content="jeremy, halin, développeur, web, freelance, reims, jérémy, projets, projet, analyste, programmeur, exia">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
 
