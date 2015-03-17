@@ -88,7 +88,7 @@ mod_gzip_item_exclude mime ^image/.*
 # BEGIN Expire headers
 <ifmodule mod_expires.c>
  ExpiresActive On
- ExpiresDefault "access plus 7200 seconds"
+ ExpiresDefault "access plus 2592000 seconds"
  ExpiresByType image/jpg "access plus 2592000 seconds"
  ExpiresByType image/jpeg "access plus 2592000 seconds"
  ExpiresByType image/png "access plus 2592000 seconds"
@@ -104,6 +104,13 @@ mod_gzip_item_exclude mime ^image/.*
  ExpiresByType application/javascript A259200
  ExpiresByType application/x-javascript "access plus 2592000 seconds"
  ExpiresByType application/x-shockwave-flash "access plus 2592000 seconds"
+
+ # Webfonts
+  ExpiresByType application/x-font-ttf "access plus 1 month"
+  ExpiresByType font/opentype "access plus 1 month"
+  ExpiresByType application/x-font-woff "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
 </ifmodule>
 # END Expire headers
 
