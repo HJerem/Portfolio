@@ -46,69 +46,70 @@ function validForm(){
     return false;
 }
 
+if($(window).width()>640){
 
+    $(function() {
+        if(window.location.href=="http://jeremyhalin.fr/" || window.location.href=="http://jeremyhalin.fr" || window.location.href=="http://jeremyhalin.fr/index.php"){
+            $('.browser-left').onScreen({
+                tolerance: 300,
+                toggleClass: false,
+                doIn: function() {
+                    $(this).addClass('fadeInLeft animated')
+                }
+            });
 
+            $('.browser-right').onScreen({
+                tolerance: 300,
+                toggleClass: false,
+                doIn: function() {
+                    $(this).addClass('fadeInRight animated')
+                }
+            });
 
-$(function() {
-    if(window.location.href=="http://jeremyhalin.fr/" || window.location.href=="http://jeremyhalin.fr" || window.location.href=="http://jeremyhalin.fr/index.php"){
-        $('.browser-left').onScreen({
-            tolerance: 400,
-            toggleClass: false,
-            doIn: function() {
-                $(this).addClass('fadeInLeft animated')
-            }
-        });
+            $('.info-left').onScreen({
+                tolerance: 200,
+                toggleClass: false,
+                doIn: function() {
+                    $(this).addClass('fadeInLeft animated')
+                }
+            });
 
-        $('.browser-right').onScreen({
-            tolerance: 400,
-            toggleClass: false,
-            doIn: function() {
-                $(this).addClass('fadeInRight animated')
-            }
-        });
+            $('.info-right').onScreen({
+                tolerance: 200,
+                toggleClass: false,
+                doIn: function() {
+                    $(this).addClass('fadeInRight animated')
+                }
+            });
+        }
+    });
 
-        $('.info-left').onScreen({
-            tolerance: 200,
-            toggleClass: false,
-            doIn: function() {
-                $(this).addClass('fadeInLeft animated')
-            }
-        });
+    $(".services-desktop").click(function(){
+        $('#slider').flexslider(0);
+    });
+    $(".services-eye").click(function(){
+        $('#slider').flexslider(1);
+    });
+    $(".services-code").click(function(){
+        $('#slider').flexslider(2);
+    });
+    $(".services-facebook").click(function(){
+        $('#slider').flexslider(3);
+    });
+    $(".services-expand").click(function(){
+        $('#slider').flexslider(4);
+    });
+    $(".services-cogs").click(function(){
+        $('#slider').flexslider(5);
+    });
+    $(".services-check").click(function(){
+        $('#slider').flexslider(6);
+    });
+    $(".services-server").click(function(){
+        $('#slider').flexslider(7);
+    });
+    $(".services-heart").click(function(){
+        $('#slider').flexslider(8);
+    });
 
-        $('.info-right').onScreen({
-            tolerance: 200,
-            toggleClass: false,
-            doIn: function() {
-                $(this).addClass('fadeInRight animated')
-            }
-        });
-    }
-});
-
-$(".services-desktop").click(function(){
-    $('#slider').flexslider(0);
-});
-$(".services-eye").click(function(){
-    $('#slider').flexslider(1);
-});
-$(".services-code").click(function(){
-    $('#slider').flexslider(2);
-});
-$(".services-facebook").click(function(){
-    $('#slider').flexslider(3);
-});
-$(".services-expand").click(function(){
-    $('#slider').flexslider(4);
-});
-$(".services-cogs").click(function(){
-    $('#slider').flexslider(5);
-});
-$(".services-check").click(function(){
-    $('#slider').flexslider(6);
-});
-$(".services-server").click(function(){
-    $('#slider').flexslider(7);
-});
-$(".services-heart").click(function(){
-    $('#slider').flexslider(8);
-});
+}
