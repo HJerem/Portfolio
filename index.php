@@ -10,7 +10,7 @@
   <meta name="description" content="Jérémy Halin, webdesigner et développeur freelance à Reims. Disponible pour vos projets !">
   <meta name="keywords" content="jeremy, halin, développeur, web, freelance, reims, jérémy, projets, projet, analyste, programmeur, exia">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
   <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>
@@ -25,10 +25,13 @@
 <?php include('header.php'); ?>
 
 <section id="home">
-  <h3>Bonjour, je suis <strong>Jérémy Halin</strong></h3>
-  <h3>Développeur <strong>front-end</strong></h3>
-  <h3><strong>Webdesigner UI/UX</strong> freelance</h3>
-  <h3>Je suis actuellement <strong>disponible</strong> !</h3>
+  <img src="img/photo.jpg" class="photo-me">
+  <div class="pres-home">
+    <h3>Bonjour, je suis <strong>Jérémy Halin</strong></h3>
+    <h3>Développeur <strong>front-end</strong></h3>
+    <h3><strong>Webdesigner UI/UX</strong> freelance</h3>
+    <h3>Je suis actuellement <strong>disponible</strong> !</h3>
+  </div>
 </section>
 
 <section id="last-works">
@@ -146,8 +149,8 @@
 <script src="js/main.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','/js/analytics.js','ga');
 
   ga('create', 'UA-59276844-1', 'auto');

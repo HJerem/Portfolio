@@ -179,9 +179,16 @@ header nav a{
 }
 
 #home {
-  clear:both;
-  padding-top:200px;
-  margin-bottom: 400px;
+  padding-top: 100px;
+  text-align: center;
+  margin-bottom: 190px;
+}
+.pres-home{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: left;
+  padding-left: 3rem;
 }
 
 #contact{
@@ -195,8 +202,6 @@ strong {
 #home h3 {
   font-size: 2em;
   font-weight: 300;
-  width:60%;
-  float:right;
   line-height: 1.4em;
 }
 
@@ -755,12 +760,7 @@ background:#D14836;
   color:    gray;
 }
 
-.browser-left, .browser-right {
-  opacity:0;
-}
-.info-left, .info-right {
-  opacity:0;
-}
+
 
 /*!
 *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
@@ -872,6 +872,12 @@ background:#D14836;
 .slider{
   margin:5em auto;
 }
+
+.photo-me{
+  border-radius: 50%;
+  display: inline-block;
+}
+
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -1106,11 +1112,34 @@ Media Queries
   .about p{
     padding: 0.2em;
   }
+
+  #home h3 {
+    text-align: center;
+    float:none;
+    width:100%;
+    font-size:1.4em;
+  }
+  .pres-home{
+    padding:0;
+  }
+  .photo-me{
+    margin:0 auto 3rem auto;
+    width:75%;
+    max-width:300px;
+    display:block;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 640px){
   header {
     padding:25px;
+  }
+  .browser-left, .browser-right {
+    opacity:0;
+  }
+  .info-left, .info-right {
+    opacity:0;
   }
 }
 
@@ -1132,17 +1161,12 @@ Media Queries
     float:none;
   }
   #home{
-    padding-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 20px;
+    margin-bottom: 60px;
   }
   .one-third {
     width:100%;
     margin-bottom: 30px;
-  }
-  #home h3 {
-    text-align: center;
-    float:none;
-    width:100%;
   }
 
   #footer-container .fa{
