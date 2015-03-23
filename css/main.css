@@ -979,7 +979,7 @@ Media Queries
     text-align: center;
   }
   .seethecase{
-    margin-bottom: 15px;
+    margin: 2rem auto 1rem auto;
   }
 }
 
@@ -995,7 +995,7 @@ Media Queries
   }
   .seethecase{
     display:block;
-    margin: 1rem auto 1rem auto;
+    margin: 2rem 0 1rem 0;
     width:220px;
   }
 }
