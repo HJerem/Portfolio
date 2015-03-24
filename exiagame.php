@@ -20,16 +20,14 @@
 
   <?php include('header.php'); ?>
 
-
-
   <section id="container-project">
     <div class="exiagame" style="padding-top:20px">
       <div class="container-wide">
 
         <h2 style="float:left">exiagame</h2>
         <div class="navigation">
-          <a href="evenact.php" class="previous-project color2" title="Projet précédent: Evenact"><i class="fa fa-angle-left"></i></a>
-          <a href="ftwrecords.php" class="next-project color2" title="Projet suivant: FTW Records"><i class="fa fa-angle-right"></i></a>
+          <a href="evenact.php" class="previous-project color2" title="Projet précédent: Evenact"><i class="fa fa-angle-left"></i>Précédent</a>
+          <a href="ftwrecords.php" class="next-project color2" title="Projet suivant: FTW Records">Suivant<i class="fa fa-angle-right"></i></a>
         </div>
         <div class="browser">
           <div class="toolbar">
@@ -55,21 +53,26 @@
       <div id="small-pres">
         <h2>ExiaGame</h2>
       </div>
-      <div id="pres">
-        <p>rutrum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet eros non velit auctor vehicula sed in nulla. Vivamus ut vestibulum ex, eu efficitur mi. Etiam blandit pulvinar dolor, eget accumsan tortor mollis at. Praesent iaculis justo in mollis accumsan. In scelerisque ullamcorper lacus sed viverra.
-
-          Integer cursus tellus felis, at posuere velit finibus vel. Nulla et feugiat velit. Donec at dui imperdiet, porttitor elit sed, congue velit. Vivamus tincidunt posuere enim eu euismod. Vivamus dignissim nisi in ipsum mollis congue. Donec et consequat libero, ut aliquet nibh. Donec sagittis nulla ut pharetra rhoncus. Nullam eu nunc nec nunc tempor finibus vel ut sapien. Nulla elit enim, finibus quis suscipit semper, pretiu</p>
-        </div>
-        <div id="information">
-          <p><strong>Client :</strong> Association ExiaGame</p>
-          <p><strong>Date :</strong> Hiver 2014</p>
-          <p><strong>Lien :</strong> http://exiagame.exia-reims.fr</p>
-          <p><strong>Technologies :</strong> PHP, HTML5, CSS3</p>
-        </div>
+      <div id="information">
+        <p><strong>Client :</strong> Association ExiaGame</p>
+        <p><strong>Date :</strong> Hiver 2014</p>
+        <p><strong>Lien :</strong> <a href="http://exiagame.exia-reims.fr" title="Site officiel Association ExiaGame">http://exiagame.exia-reims.fr</a></p>
+        <p><strong>Technologies :</strong> PHP, HTML5, CSS3, Javascript, jQuery</p>
       </div>
-    </section>
+      <div id="pres">
+        <p>ExiaGame est une association à but non lucratif, dont je fais partie, qui organise chaque année plusieurs <abbr title="Une LAN party est un évènement rassemblant des personnes dans le but de jouer à des jeux vidéo en utilisant un réseau local.">LAN party</abbr> dans l'enceinte de l'école EXIA, école d'ingénieur en informatique.
+           Dans l'optique d'améliorer sa visibilité ainsi que l'expérience utilisateur, j'ai réalisé un tout nouveau design reprenant les couleurs du logo de l'école. Cela donne 
+           des tons sombres certes mais avec un très bon contraste et une très bonne lisibilité.
+           Avec l'aide d'un autre membre de l'association, nous avons créé l'espace membre dans lequel les inscrits peuvent fonder leur équipe de jeu, consulter leur profil et le modifier, s'inscrire
+           à un tournoi, consulter les règles des tournois, payer l'entrée directement en ligne via PayPal.
+           Dans le but de toujours facilité la gestion de l'évènement pour les organisteurs, nous avons ensuite développé le <abbr title="Le Back-End est la partie invisible d'un site ou d'une application web, elle traite les données et sert d'interface d'administration.">Back-End</abbr> pour permettre aux organisateurs de gérer les inscriptions, de se faire contacter, de validité 
+           l'arrivée des personnes à l'évènement ou encore de confirmer les inscriptions.</p>
+           <p class="highlight">Un mois après la mise en ligne, plus de 200 personnes étaient inscrites et l'évènement fût un succès.</p>
+      </div>
+    </div>
+  </section>
 
-  </div>
+</div>
 
   <?php include('footer.php'); ?>
 

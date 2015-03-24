@@ -57,12 +57,6 @@ textarea {
 
 }
 
-::-moz-selection {
-  background: #000000;
-  text-shadow: none;
-  color:white;
-}
-
 ::selection {
   background: #000000;
   text-shadow: none;
@@ -240,6 +234,10 @@ header nav a{
 }
 .one-third p{
   margin-top: 15px;
+}
+abbr{
+  border-bottom:dotted 1px #2a2a2a;
+  cursor:help;
 }
 
 
@@ -429,28 +427,63 @@ header nav a{
 
 /* === Projects === */
 .next-project, .previous-project{
-  color: white;
-  padding: 10px 7px 0px 6px;
-  width: 4rem;
-  height: 4rem;
-  box-sizing: border-box;
-  border: 1px solid white;
-  border-radius: 3px;
+  padding:15px;
+  border:1px solid white;
+  border-radius: 5px;
   display: inline-block;
-  cursor: pointer;
   text-decoration: none;
+  text-transform: uppercase;
+  width:180px;
+  margin-top: 0.2rem;
   -webkit-transition: background .2s ease;
   -moz-transition: background .2s ease;
   -ms-transition: background .2s ease;
   -o-transition: background .2s ease;
   transition: background .2s ease;
-  font-weight: 900;
-  font-style: italic;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 1.5em;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.fa-angle-left{
+	margin-right:1rem;
+}
+.fa-angle-right{
+	margin-left:1rem;
 }
 .previous-project{
   margin-right:0.5em;
+}
+#information {
+  float:right;
+  width: 35%;
+  margin-top: 10px;
+  line-height: 2em;
+  font-size: 1.2em;
+}
+#small-pres{
+  color:#2a2a2a;
+  padding:10px 0 10px 0;
+  border-bottom: 10px solid #2a2a2a;
+}
+
+#pres{
+  float: left;
+  width: 60%;
+  margin-top: 20px;
+  text-align: justify;
+  padding: 10px 0 10px 0;
+  font-size: 1.3em;
+  line-height: 1.8rem;
+}
+.highlight{
+  margin-top:1rem;
+  font-weight:600;
+}
+#information a{
+	color:#2a2a2a;
 }
 
 
@@ -547,33 +580,6 @@ header nav a{
 }
 
 
-
-
-
-
-
-#information {
-  float:right;
-  width: 35%;
-  margin-top: 10px;
-  line-height: 2em;
-  font-size: 1.2em;
-}
-#small-pres{
-  color:#2a2a2a;
-  padding:10px 0 10px 0;
-  border-bottom: 10px solid #2a2a2a;
-}
-
-#pres{
-  float:left;
-  width:55%;
-  margin-top:20px;
-  padding:10px 0 10px 0;
-  font-size: 1.3em;
-}
-
-
 /* === Forms === */
 .formulaire{
   margin:0 auto;
@@ -654,8 +660,17 @@ select {
 
 
 /* === Services === */
-.round-small .fa, .round .fa{
+.round .fa{
   font-size: 3.5em;
+  color: white;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.round-small .fa {
+  font-size: 2.5em;	
   color: white;
   position: relative;
   top: 50%;
@@ -980,6 +995,17 @@ Media Queries
   }
   .seethecase{
     margin: 2rem auto 1rem auto;
+  }
+  #information{
+  	float:none;
+    width:100%;
+  }
+  #pres{
+  	float:none;
+    width:100%;
+  }
+  .next-project, .previous-project{
+  	width:50%;
   }
 }
 
