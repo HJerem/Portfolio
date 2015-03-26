@@ -8,10 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Jérémy Halin - Page non trouvé</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='http://fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
-
-  <!--<script src="js/vendor/modernizr-2.6.2.min.js"></script>-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -28,7 +27,7 @@
   </div>
 
   <section id="home">
-    <h3>La page que vous recherchez est <strong>introuvable</strong></h3>
+    <h3>La page que vous recherchez est <strong>inexistante</strong> ou <strong>introuvable</strong></h3>
   </section>
 
 

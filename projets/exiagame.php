@@ -6,6 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <base href="http://jeremyhalin.fr/">
   <title>Jérémy Halin | Projet ExiaGame</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -18,7 +19,7 @@
 <![endif]-->
 <div id="container">
 
-  <?php include('header.php'); ?>
+  <?php include('../header.php'); ?>
 
   <section id="container-project">
     <div class="exiagame" style="padding-top:20px">
@@ -26,8 +27,8 @@
 
         <h2 style="float:left">exiagame</h2>
         <div class="navigation">
-          <a href="evenact.php" class="previous-project color2" title="Projet précédent: Evenact"><i class="fa fa-angle-left"></i>Précédent</a>
-          <a href="ftwrecords.php" class="next-project color2" title="Projet suivant: FTW Records">Suivant<i class="fa fa-angle-right"></i></a>
+          <a href="projets/ftwrecords" class="previous-project color2" title="Projet précédent: FTW Records"><i class="fa fa-angle-left"></i>Précédent</a>
+          <a href="projets/infolan" class="next-project color2" title="Projet suivant: InfoLAN">Suivant<i class="fa fa-angle-right"></i></a>
         </div>
         <div class="browser">
           <div class="toolbar">
@@ -74,16 +75,16 @@
 
 </div>
 
-  <?php include('footer.php'); ?>
+  <?php include('../footer.php'); ?>
 
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="js/main.js"></script>
+<script src="/js/main.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','/js/analytics.js','ga');
 
   ga('create', 'UA-59276844-1', 'auto');
   ga('send', 'pageview');

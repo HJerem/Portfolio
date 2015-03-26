@@ -57,7 +57,7 @@
       <div class="info-right">
         <h2>ftw records</h2>
         <p>Site réalisé pour un label musical. Il présente les dernières signatures, les deniers concerts, un formulaire de contact ainsi qu'une boutique. Un site complet et ergnonomique.</p>
-        <a href="" class="seethecase color3">Voir le projet</a>
+        <a href="projets/ftwrecords" class="seethecase color3">Voir le projet</a>
       </div>
     </div>
   </div>
@@ -67,7 +67,7 @@
       <div class="info-left">
         <h2>exiagame</h2>
         <p>Les organisateurs avaient besoin d'un site qui permettait aux gens de s'inscrire à l'évènement et de consulter toutes les informations relatifs à celui-ci. De cette manière les organisateurs ont pu savoir le nombre de participants et l'évènement fût un succès.</p>
-        <a href="exiagame.php" class="seethecase color4">Voir le projet</a>
+        <a href="projets/exiagame" class="seethecase color4">Voir le projet</a>
       </div>
       <div class="browser-right">
         <div class="toolbar">
@@ -110,7 +110,7 @@
       <div class="info-right">
         <h2>infolan</h2>
         <p>Les organisateurs avaient besoin d'un site qui permettait aux gens de s'inscrire à l'évènement et de consulter toutes les informations relatifs à celui-ci. De cette manière les organisateurs ont pu savoir le nombre de participants et l'évènement fût un succès.</p>
-        <a href="" class="seethecase color1">Voir le projet</a>
+        <a href="projets/infolan" class="seethecase color1">Voir le projet</a>
       </div>
     </div>
   </div>
@@ -120,7 +120,7 @@
       <div class="info-left">
         <h2>evenact</h2>
         <p>Un projet réalisé dans le cadre des mes études qui fût développé en deux semaines. Ce site permettait de créer un évènement et d'inviter ses amis. Simple et efficace, nous avons dû réaliser beaucoup de fonctionnalités en peu de temps, un vrai challenge!</p>
-        <a href="" class="seethecase color2">Voir le projet</a>
+        <a href="projets/evenact" class="seethecase color2">Voir le projet</a>
       </div>
       <div class="browser-right">
         <div class="toolbar">

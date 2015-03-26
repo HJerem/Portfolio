@@ -814,6 +814,53 @@ footer {
   float:left;
 }
 
+.experiments{
+  padding:3rem 8rem 3rem 8rem;
+}
+
+.experiments .fa{
+  opacity: 0;
+      /*transition*/
+  -webkit-transition:all 0.2s;
+  -moz-transition:all 0.2s;
+  -o-transition:all 0.2s;
+  transition:all 0.2s;
+  float:right;
+  margin-right: 1rem;
+  padding-top: 1.2rem;
+}
+
+.experiments a{
+  text-decoration: none;
+  color:#2a2a2a;
+}
+.experiments li{
+  -webkit-transition:all 0.2s;
+  -moz-transition:all 0.2s;
+  -o-transition:all 0.2s;
+  transition:all 0.2s;
+  border-bottom: 1px solid;
+  padding-bottom:4px;
+  margin-bottom: 1rem;
+}
+.experiments li:hover{
+
+  border-bottom: 5px solid #2a2a2a;
+  padding-bottom:0;
+}
+.experiments li:hover .fa{
+  opacity: 1; 
+  margin-right: 0;
+}
+.experiments h3{
+    -webkit-transition:all 0.4s;
+  -moz-transition:all 0.4s;
+  -o-transition:all 0.4s;
+  transition:all 0.4s;
+}
+.experiments li:hover h3{
+    margin-left:1rem; 
+}
 /* ==========================================================================
 CSS Libraries (Animate)
 ========================================================================== */

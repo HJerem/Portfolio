@@ -4,20 +4,20 @@ order allow,deny
 deny from all
 </files>
 
+Options +FollowSymlinks
 RewriteEngine On
 RewriteCond %{HTTP_HOST} !^jeremyhalin\.fr$ [NC]
 RewriteRule ^(.*)$ http://jeremyhalin.fr/$1 [R=301,L]
 
-Options +FollowSymlinks
-RewriteEngine On
-RewriteRule    ^contact$    contact.php    [L]
-RewriteRule    ^accueil$    index.php    [L]
-RewriteRule    ^qui-suis-je$    apropos.php    [L]
-RewriteRule    ^services$    services.php    [L]
-
-RewriteRule    ^portfolio/exiagame$    exiagame.php    [L]
-
-RewriteRule    ^error404$    error404.php    [L]
+RewriteRule    ^contact$    	      contact.php    		  [L]
+RewriteRule    ^accueil$    	 	  index.php      		  [L]
+RewriteRule    ^qui-suis-je$    	  apropos.php    		  [L]
+RewriteRule    ^services$    		  services.php  		  [L]
+RewriteRule    ^projets/exiagame$    projets/exiagame.php   [L]
+RewriteRule    ^projets/ftwrecords$  projets/ftwrecords.php [L]
+RewriteRule    ^projets/infolan$     projets/infolan.php    [L]
+RewriteRule    ^projets/evenact$     projets/evenact.php    [L]
+RewriteRule    ^error404$   		  error404.php   		  [L]
 
 ErrorDocument 404 /error404
 

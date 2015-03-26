@@ -47,7 +47,6 @@ function validForm(){
 }
 
 if($(window).width()>640){
-console.log("test");
     $(function() {
         if(window.location.href=="http://jeremyhalin.fr/" || window.location.href=="http://jeremyhalin.fr" || window.location.href=="http://jeremyhalin.fr/index.php"){
             $('.browser-left').onScreen({
