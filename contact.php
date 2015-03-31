@@ -29,7 +29,7 @@
   $err=false;
   $message="";
   if(isset($_POST['submit']) && $_POST['submit']=="Envoyer"){
-    if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['name']) && isset($_POST['sujet']) && isset($_POST['budget']) && isset($_POST['message'])){
+    if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['name']) && isset($_POST['sujet']) && isset($_POST['message'])){
       if(preg_match('#^(([a-z0-9!\#$%&\\\'*+/=?^_`{|}~-]+\.?)*[a-z0-9!\#$%&\\\'*+/=?^_`{|}~-]+)@(([a-z0-9-_]+\.?)*[a-z0-9-_]+)\.[a-z]{2,}$#i',$_POST['email'])){
         if(strlen($_POST['message'])>100){
           $to      = 'hello@jeremyhalin.fr';
@@ -70,13 +70,6 @@
       <option value="devis">Demande de devis</option>
       <option value="question">Question, proposition, demande</option>
       <option value="autre">Autre</option>
-    </select>
-    <select name="budget" id="budget" required>
-      <option value="" default>Budget...</option>
-      <option value="1"><500€</option>
-      <option value="2">entre 500€ et 1000€</option>
-      <option value="3">entre 1000€ et 2500€</option>
-      <option value="4">>2500€</option>
     </select>
     <textarea class="inputMessage" placeholder="Message..." name="message" id="message" value="<?php echo $_POST['message'] ?>" required></textarea>
     <input type="submit" name="submit" value="Envoyer" class="seethecaseblack" style="display:block;" onclick="return validForm()">

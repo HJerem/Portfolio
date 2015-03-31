@@ -32,7 +32,15 @@
     <h3><strong>Webdesigner UI/UX</strong> freelance</h3>
     <h3>Je suis actuellement <strong>disponible</strong> !</h3>
   </div>
+
+  <h3 class="mt3rem">Je <strong>transforme</strong> votre visibilité sur internet en <strong>chiffre d'affaires</h3>
+
+  <a href="/contact" class="seethecaseblack mt2rem">Parlez-moi de votre projet</a>
 </section>
+
+<div id="mouse-icon">
+  <div id="scroll-wheel"></div>
+</div>
 
 <section id="last-works">
 

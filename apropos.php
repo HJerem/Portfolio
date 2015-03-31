@@ -27,15 +27,12 @@
 </div>
 <section class="container-1024">
 <div class="about">
-	<p>
-		<center><span class="round"><i class="fa fa-user"></i></span></center>
-	</p>
-	<p>Passionné des nouvelles technologies et tout particulièrement du web, j’ai orienté mes études en ce sens. D’abord à l’IUT Informatique de Reims pendant deux ans puis actuellement à l’EXIA, une école d’ingénieur en informatique spécialité Logiciel.</p>
+	<p class="mt3rem">Passionné des nouvelles technologies et tout particulièrement du web, j’ai orienté mes études en ce sens. D’abord à l’IUT Informatique de Reims pendant deux ans puis actuellement à l’EXIA, une école d’ingénieur en informatique spécialité Logiciel.</p>
 	<p>Je souhaitais entretenir une vie professionnelle en parallèle de ma vie d’étudiant. Ainsi fort de mes connaissances acquises durant ces 6 dernières années et m’ayant permis de réaliser tous les projets qui m’ont été confiés, j’ai décidé de me lancer dans l’aventure freelance.</p>
 	<p>Je porte une attention toute particulière aux projets qui me sont confiés.</p>
 	<p>Auto didacte, sérieux et passionné, je saurais m’adapter à votre projet et faire en sorte que le résultat final réponde parfaitement à vos attentes tout en étant unique et moderne.</p>
 	
-	<center><a href="/contact" class="seethecaseblack">Me contacter</a></center>
+	<center><a href="/contact" class="seethecaseblack mt1rem">Me contacter</a></center>
 	</div>
 </section>
 
