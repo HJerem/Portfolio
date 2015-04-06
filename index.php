@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="fr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Jérémy Halin - Développeur web freelance</title>
   <meta name="description" content="Jérémy Halin, webdesigner et développeur freelance à Reims. Disponible pour vos projets !">
   <meta name="keywords" content="jeremy, halin, développeur, web, freelance, reims, jérémy, projets, projet, analyste, programmeur, exia">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Portfolio Jérémy Halin" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://jeremyhalin.fr/" />
+  <meta property="og:image" content="http://jeremyhalin.fr/img/photo.jpg" />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
@@ -25,7 +27,7 @@
 <?php include('header.php'); ?>
 
 <section id="home">
-  <img src="img/photo.jpg" class="photo-me">
+  <img src="img/photo.jpg" alt="Ma photo" class="photo-me">
   <div class="pres-home">
     <h3>Bonjour, je suis <strong>Jérémy Halin</strong></h3>
     <h3>Développeur <strong>front-end</strong></h3>
@@ -33,7 +35,7 @@
     <h3>Je suis actuellement <strong>disponible</strong> !</h3>
   </div>
 
-  <h3 class="mt3rem">Je <strong>transforme</strong> votre visibilité sur internet en <strong>chiffre d'affaires</h3>
+  <h3 class="mt3rem">Je <strong>transforme</strong> votre visibilité sur internet en <strong>chiffre d'affaires</strong></h3>
 
   <a href="/contact" class="seethecaseblack mt2rem">Parlez-moi de votre projet</a>
 </section>
@@ -60,7 +62,7 @@
             <div class="circle"></div>
           </div>
         </div>
-        <img src="img/ftw.jpg"  alt="Aperçu site web FTW Records">
+        <img src="img/ftw.jpg" alt="Aperçu site web FTW Records">
       </div>
       <div class="info-right">
         <h2>ftw records</h2>
@@ -165,5 +167,6 @@
   ga('send', 'pageview');
 
 </script>
+<noscript>JavaScript est désactivé sur votre navigateur!</noscript>
 </body>
 </html>

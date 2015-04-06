@@ -100,9 +100,6 @@ body {
 
 
 /* === Containers === */
-#container {
-  width:100%;
-}
 .container-1024{
   width: 100%;
   margin:0 auto;
