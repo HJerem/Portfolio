@@ -48,7 +48,8 @@ function validForm(){
 
 if($(window).width()>640){
     $(function() {
-        if(window.location.href=="http://jeremyhalin.fr/" || window.location.href=="http://jeremyhalin.fr" || window.location.href=="http://jeremyhalin.fr/index.php"){
+        if(window.location.href=="http://jeremyhalin.fr/" || window.location.href=="http://jeremyhalin.fr" || window.location.href=="http://jeremyhalin.fr/index.php" || window.location.href=="http://jeremyhalin.fr/en/" || window.location.href=="http://jeremyhalin.fr/en/index.php"){
+            console.log("works");
             $('.browser-left').onScreen({
                 tolerance: 300,
                 toggleClass: false,

@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="fr"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="fr"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Jérémy Halin | Contact</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="http://jeremyhalin.fr/">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <!--[if lt IE 7]>
-<p class="browsehappy">Vous utilisez un navigateur <strong>obsolète</strong>. Merci de <a href="http://browsehappy.com/">mettre à jour votre navigateur</a> pour améliorer votre expérience utilisateur.</p>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">update your browser</a> to improve user experience.</p>
 <![endif]-->
 
 <?php include('header.php'); ?>
@@ -42,41 +43,37 @@
           $headers .= 'From: '.$_POST['name'].'<'.$_POST['email'].'>' . "\r\n";
 
           if(mail($to, $subject, "<p>".$message."</p>", $headers)){
-            $message="<i class='fa fa-check'></i> Message envoyé, merci. Je vous répondrais au plus vite !";
+            $message="<i class='fa fa-check'></i> Message sent, thanks. I will answer you as fast as I can !";
           }
           else{
             $err=true;
-            $message="<i class='fa fa-exclamation-triangle'></i> Une erreur est survenue. Votre message n'a pas été envoyé";
+            $message="<i class='fa fa-exclamation-triangle'></i> Something went wrong. Your message hasn't been sent.";
           }
         }
         else{
           $err=true;
-          $message="<i class='fa fa-exclamation-triangle'></i> Merci de décrire votre projet plus précisemment";
+          $message="<i class='fa fa-exclamation-triangle'></i> Please describe your project more precisely.";
         }
       }
       else{
-        $message = "<i class='fa fa-exclamation-triangle'></i> Merci de remplir tous les champs";
+        $message = "<i class='fa fa-exclamation-triangle'></i> Please fill in all fields.";
       }
     }
   }
 
   ?>
-  <p class="mt2rem">Envoyez-moi directement un mail</p>
-  <h3 class="mailto"><a href="mailto:hello@jeremyhalin.fr" target="_blank" title="Envoyez moi un mail">hello@jeremyhalin.fr</a></h3>
-  
-   <p id="message-validation"><?php echo $message ?></p>
-  <p class="mb2rem">Ou remplissez le formulaire ci dessous</p>
+  <p id="message-validation"><?php echo $message ?></p>
   <form class="formulaire" name="form" id="form" action="http://jeremyhalin.fr/contact" method="POST">
-    <input type="text" class="input" placeholder="Nom..." name="name" id="nom" value="<?php echo $_POST['name'] ?>" required>
+    <input type="text" class="input" placeholder="Name..." name="name" id="nom" value="<?php echo $_POST['name'] ?>" required>
     <input type="email" class="input" placeholder="Email..." name="email" id="email" value="<?php echo $_POST['email'] ?>" required>
     <select name="sujet" id="sujet" required>
-      <option value="" default>Sujet...</option>
-      <option value="devis">Demande de devis</option>
-      <option value="question">Question, proposition, demande</option>
+      <option value="" default>Subject...</option>
+      <option value="devis">Quote request</option>
+      <option value="question">Question, suggestion, request</option>
       <option value="autre">Autre</option>
     </select>
     <textarea class="inputMessage" placeholder="Message..." name="message" id="message" value="<?php echo $_POST['message'] ?>" required></textarea>
-    <input type="submit" name="submit" value="Envoyer" class="seethecaseblack" style="display:block;" onclick="return validForm()">
+    <input type="submit" name="submit" value="Send" class="seethecaseblack" style="display:block;" onclick="return validForm()">
   </form>
 
 </section>

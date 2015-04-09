@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="fr"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="fr"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Jérémy Halin | Services</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="http://jeremyhalin.fr/">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
-
-
-  <!--<script src="js/vendor/modernizr-2.6.2.min.js"></script>-->
 </head>
 <body>
 <!--[if lt IE 7]>
-<p class="browsehappy">Vous utilisez un navigateur <strong>obsolète</strong>. Merci de <a href="http://browsehappy.com/">mettre à jour votre navigateur</a> pour améliorer votre expérience utilisateur.</p>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">update your browser</a> to improve user experience.</p>
 <![endif]-->
 
 <?php include('header.php'); ?>
@@ -34,61 +32,61 @@
       <li>
         <span class="round"><i class="fa fa-desktop"></i></span>
         <h3>Webdesign</h3>
-        <p>Je conçois de A à Z le design de votre site internet, du maquettage à l'intégration, en respectant vos demandes et attentes tout en proposant un design unique.</p>
+        <p>I conceive from A to Z the design of your website, from prototyping to integration, meeting your demands and expectations while offering a unique design.</p>
       </li>
       <li>
         <span class="round"><i class="fa fa-eye"></i></span>
-        <h3>Identité visuelle</h3>
-        <p>Je créé une identité visuelle correspondante à votre entreprise afin d'en augmenter la notoriété et sa crédibilité.</p>
+        <h3>Branding</h3>
+        <p>I create a corresponding visual identity for your business in order to increase notoriety and credibility.</p>
       </li>
       <li>
         <span class="round"><i class="fa fa-code"></i></span>
-        <h3>Intégration web</h3>
-        <p>J’intègre votre site web jusqu’aux moindres détails tout en me focalisant sur l’expérience utilisateur (UX).</p>
+        <h3>Web integration</h3>
+        <p>I integrate your website in every detail while focusing myself on the user experience (UX).</p>
       </li>
       <li>
         <span class="round"><i class="fa fa-facebook"></i></span>
-        <h3>Réseaux sociaux</h3>
-        <p>Je m’occupe de rendre visible votre entreprise sur les principaux réseaux sociaux et ce afin d’en augmenter la visibilité sur internet.</p>
+        <h3>Social media</h3>
+        <p>I take care to make your business visible on the main social networks in order to increase your online visibility.</p>
       </li>
       <li>
         <span class="round"><i class="fa fa-expand"></i></span>
-        <h3>Responsive (site web adaptatif)</h3>
-        <p>Je m’assure que chaque page de votre site est accessible peu importe l’appareil (PC, smartphone, tablette, ordinateur potable)</p>
+        <h3>Responsive</h3>
+        <p>I make sure every page of your website is accessible regardless of the device used (PC, laptop, smartphone, tablet)</p>
       </li>
       <li>
         <span class="round"><i class="fa fa-cogs"></i></span>
-        <h3>Développement back-end</h3>
-        <p>Je conçois votre application ainsi que son interface d’administration de manière optimisée et bien pensée.</p>
+        <h3>Back-End development</h3>
+        <p>I conceive your application and its administration interface in an optimized way and well thought out.</p>
       </li>
       <li>
         <span class="round"><i class="fa fa-check"></i></span>
-        <h3>Respect des normes</h3>
-        <p>Je respecte les normes liées à l’accessibilité, au W3C, à l’ergonomie et la compatibilité multi-navigateurs.</p>
+        <h3>Meeting standards</h3>
+        <p>I respect the standards for accessibility, W3C, ergonomics and cross-browser compatibility.</p>
       </li>
       <li>
         <span class="round"><i class="fa fa-server"></i></span>
-        <h3>Hébergement</h3>
-        <p>Je m’occupe du nom de domaine, de la mise en ligne, du référencement et autres actions liées à la mise en ligne afin de vous fournir un site web “clés en main”.</p>
+        <h3>Hosting</h3>
+        <p>I take care of the domain name, the online publication, the SEO and other actions related to provide you with a website ready for use.</p>
       </li>
       <li>
         <span class="round"><i class="fa fa-heart"></i></span>
         <h3>Passion</h3>
-        <p>Je travaille avec passion, je suis perfectionniste et ne laisse rien au hasard. Vous êtes assurés d’obtenir un produit performant et correspondant à vos attentes.</p>
+        <p>I work with passion and I am perfectionist. You are assured to get a powerful product that meet your expectations.</p>
       </li>
     </ul>
   </div>
   <nav id="services">
     <ul>
       <li><a title="Webdesign" class="round-small services-desktop"><i class="fa fa-desktop"></i></a></li>
-      <li><a title="Identité visuelle" class="round-small services-eye"><i class="fa fa-eye"></i></a></li>
-      <li><a title="Intégration web" class="round-small services-code"><i class="fa fa-code"></i></a></li>
-      <li><a title="Réseaux sociaux" class="round-small services-facebook"><i class="fa fa-facebook"></i></a></li>
+      <li><a title="Branding" class="round-small services-eye"><i class="fa fa-eye"></i></a></li>
+      <li><a title="Web integration" class="round-small services-code"><i class="fa fa-code"></i></a></li>
+      <li><a title="Social media" class="round-small services-facebook"><i class="fa fa-facebook"></i></a></li>
       <li><a title="Responsive Design" class="round-small services-expand"><i class="fa fa-expand"></i></a></li>
-      <li><a title="Développement back-end" class="round-small services-cogs"><i class="fa fa-cogs"></i></a></li>
-      <li><a title="Respect des normes" class="round-small services-check"><i class="fa fa-check"></i></a></li>
-      <li><a title="Hébergement" class="round-small services-server"><i class="fa fa-server"></i></a></li>
-      <li><a title="Une véritable passion" class="round-small services-heart"><i class="fa fa-heart"></i></a></li>
+      <li><a title="Back-End development" class="round-small services-cogs"><i class="fa fa-cogs"></i></a></li>
+      <li><a title="Meeting standards" class="round-small services-check"><i class="fa fa-check"></i></a></li>
+      <li><a title="Hosting" class="round-small services-server"><i class="fa fa-server"></i></a></li>
+      <li><a title="A true passion" class="round-small services-heart"><i class="fa fa-heart"></i></a></li>
     </ul>
   </nav>
 </section>
