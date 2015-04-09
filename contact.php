@@ -61,11 +61,7 @@
   }
 
   ?>
-  <p class="mt2rem">Envoyez-moi directement un mail</p>
-  <h3 class="mailto"><a href="mailto:hello@jeremyhalin.fr" target="_blank" title="Envoyez moi un mail">hello@jeremyhalin.fr</a></h3>
-  
-   <p id="message-validation"><?php echo $message ?></p>
-  <p class="mb2rem">Ou remplissez le formulaire ci dessous</p>
+  <p id="message-validation"><?php echo $message ?></p>
   <form class="formulaire" name="form" id="form" action="http://jeremyhalin.fr/contact" method="POST">
     <input type="text" class="input" placeholder="Nom..." name="name" id="nom" value="<?php echo $_POST['name'] ?>" required>
     <input type="email" class="input" placeholder="Email..." name="email" id="email" value="<?php echo $_POST['email'] ?>" required>
