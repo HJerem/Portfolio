@@ -27,8 +27,8 @@
 
         <h2 style="float:left">evenact</h2>
         <div class="navigation">
-          <a href="projets/infolan" class="previous-project color4" title="Previous work: InfoLAN"><i class="fa fa-angle-left"></i>Previous</a>
-          <a href="projets/ftwrecords" class="next-project color4" title="Next work: FTW Records">Next<i class="fa fa-angle-right"></i></a>
+          <a href="en/works/infolan" class="previous-project color4" title="Previous work: InfoLAN"><i class="fa fa-angle-left"></i>Previous</a>
+          <a href="en/works/ftwrecords" class="next-project color4" title="Next work: FTW Records">Next<i class="fa fa-angle-right"></i></a>
         </div>
         <div class="browser">
           <div class="toolbar">

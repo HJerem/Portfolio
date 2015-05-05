@@ -26,6 +26,12 @@
 <section class="container-1024">
 
   <?php
+
+  foreach ($_REQUEST as $key => $val) 
+  {
+    $val = preg_replace("/[^_A-Za-z0-9-\.&=]/i",'', $val);
+    $_REQUEST[$key] = $val;
+  }  
   $err=false;
   $message="";
   if(isset($_POST['submit']) && $_POST['submit']=="Envoyer"){

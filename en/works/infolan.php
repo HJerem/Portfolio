@@ -27,8 +27,8 @@
 
         <h2 style="float:left">infolan</h2>
         <div class="navigation">
-          <a href="projets/exiagame" class="previous-project color1" title="Projet précédent: ExiaGame"><i class="fa fa-angle-left"></i>Précédent</a>
-          <a href="projets/evenact" class="next-project color1" title="Projet suivant: Evenact">Suivant<i class="fa fa-angle-right"></i></a>
+          <a href="en/works/exiagame" class="previous-project color1" title="Projet précédent: ExiaGame"><i class="fa fa-angle-left"></i>Précédent</a>
+          <a href="en/works/evenact" class="next-project color1" title="Projet suivant: Evenact">Suivant<i class="fa fa-angle-right"></i></a>
         </div>
         <div class="browser">
           <div class="toolbar">
