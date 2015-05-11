@@ -216,5 +216,5 @@ Header set Content-Security-Policy "script-src 'self' 'unsafe-inline' https://ww
 
 Header always edit Set-Cookie (.*) "$1; HTTPOnly; Secure"
 Header always append X-Frame-Options DENY
-Header always append X-Content-Type-Options NOSNIFF
+Header always append X-Content-Type-Options "nosniff"
 Header always append X-XSS-Protection "1; mode=block"
