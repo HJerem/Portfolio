@@ -213,3 +213,8 @@ AddCharset utf-8 .php
 <IfModule mod_headers.c>
 Header set Content-Security-Policy "script-src 'self' 'unsafe-inline' https://www.google.com https://ajax.googleapis.com"
 </IfModule>
+
+Header always edit Set-Cookie (.*) "$1; HTTPOnly; Secure"
+Header always append X-Frame-Options DENY
+Header always append X-Content-Type-Options NOSNIFF
+Header always append X-XSS-Protection "1; mode=block"
