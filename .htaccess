@@ -123,6 +123,42 @@ ReWriteCond %{REQUEST_FILENAME} !^.+.gz$
 RewriteCond %{REQUEST_FILENAME}.gz -f
 #All conditions met so add .gz to URL filename (invisibly)
 RewriteRule ^(.+) $1.gz [QSA,L]
+
+
+# KILL THEM ETAGS
+Header unset ETag
+FileETag none
+
+# Adaptive-Images -----------------------------------------------------------------------------------
+
+# Add any directories you wish to omit from the Adaptive-Images process on a new line, as follows:
+# RewriteCond %{REQUEST_URI} !ignore-this-directory
+# RewriteCond %{REQUEST_URI} !and-ignore-this-directory-too
+
+RewriteCond %{REQUEST_URI} !assets
+
+# don't apply the AI behaviour to images inside AI's cache folder:
+RewriteCond %{REQUEST_URI} !ai-cache
+
+# Send any GIF, JPG, or PNG request that IS NOT stored inside one of the above directories
+# to adaptive-images.php so we can select appropriately sized versions
+
+RewriteRule \.(?:jpe?g|gif|png)$ adaptive-images.php
+
+# END Adaptive-Images -------------------------------------------------------------------------------
+AddDefaultCharset utf-8
+AddCharset utf-8 .html
+AddCharset utf-8 .php
+
+<IfModule mod_headers.c>
+Header set Content-Security-Policy "script-src 'self' 'unsafe-inline' https://www.google.com https://ajax.googleapis.com"
+</IfModule>
+
+#Header always edit Set-Cookie (.*) "$1; HTTPOnly; Secure"
+Header always append X-Frame-Options DENY
+Header always append X-Content-Type-Options "nosniff"
+Header always append X-XSS-Protection "1; mode=block"
+
 <ifmodule mod_gzip.c>
 mod_gzip_on Yes
 mod_gzip_dechunk Yes
@@ -184,37 +220,3 @@ ExpiresByType image/svg+xml "access plus 1 month"
 ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
 </ifmodule>
 # END Expire headers
-
-# KILL THEM ETAGS
-Header unset ETag
-FileETag none
-
-# Adaptive-Images -----------------------------------------------------------------------------------
-
-# Add any directories you wish to omit from the Adaptive-Images process on a new line, as follows:
-# RewriteCond %{REQUEST_URI} !ignore-this-directory
-# RewriteCond %{REQUEST_URI} !and-ignore-this-directory-too
-
-RewriteCond %{REQUEST_URI} !assets
-
-# don't apply the AI behaviour to images inside AI's cache folder:
-RewriteCond %{REQUEST_URI} !ai-cache
-
-# Send any GIF, JPG, or PNG request that IS NOT stored inside one of the above directories
-# to adaptive-images.php so we can select appropriately sized versions
-
-RewriteRule \.(?:jpe?g|gif|png)$ adaptive-images.php
-
-# END Adaptive-Images -------------------------------------------------------------------------------
-AddDefaultCharset utf-8
-AddCharset utf-8 .html
-AddCharset utf-8 .php
-
-<IfModule mod_headers.c>
-Header set Content-Security-Policy "script-src 'self' 'unsafe-inline' https://www.google.com https://ajax.googleapis.com"
-</IfModule>
-
-Header always edit Set-Cookie (.*) "$1; HTTPOnly; Secure"
-Header always append X-Frame-Options DENY
-Header always append X-Content-Type-Options "nosniff"
-Header always append X-XSS-Protection "1; mode=block"
