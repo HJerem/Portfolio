@@ -11,6 +11,7 @@
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <script src='js/main.js'></script>
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -43,7 +44,7 @@
           $message = $_POST['message'];
           $headers  = 'MIME-Version: 1.0' . "\r\n";
           $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-          $headers .= 'Content-Transfer-Encoding: 8bit' . "\r\n";
+          $headers .= 'Content-Transfer-Encoding: UTF-8' . "\r\n";
           $headers .= 'To: Jérémy Halin <hello@jeremyhalin.me>' . "\r\n";
           $headers .= 'From: '.$_POST['name'].'<'.$_POST['email'].'>' . "\r\n";
 
@@ -61,8 +62,11 @@
         }
       }
       else{
-        $message = "<i class='fa fa-exclamation-triangle'></i> Merci de remplir tous les champs";
+        $message = "<i class='fa fa-exclamation-triangle'></i> Merci d'indiquer une adresse email valide";
       }
+    }
+	else{
+        $message = "<i class='fa fa-exclamation-triangle'></i> Merci de remplir tous les champs";
     }
   }
 

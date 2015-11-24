@@ -17,7 +17,6 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
-  <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -152,19 +151,7 @@
 </section>
 
 <?php include('footer.php'); ?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
-<script src="js/jquery.onscreen.min.js" async></script>
-<script src="js/main.js" async></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','/js/analytics.js','ga');
-
-  ga('create', 'UA-59276844-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<noscript>JavaScript est désactivé sur votre navigateur!</noscript>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
